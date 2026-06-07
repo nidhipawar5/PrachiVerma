@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prachi Verma — Digital Media & Content Strategist</title>
+  <meta name="description" content="Portfolio of Prachi Verma — Social Media Manager, Content Strategist & HR Communications Professional based in Bhopal, India." />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&family=Playfair+Display:ital@1&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="nav" id="nav">
+    <div class="nav__logo">PV</div>
+    <ul class="nav__links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="nav__cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+      Hire Me
+    </button>
+    <button class="nav__hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#about" onclick="closeMobile()">About</a></li>
+      <li><a href="#services" onclick="closeMobile()">Services</a></li>
+      <li><a href="#work" onclick="closeMobile()">Work</a></li>
+      <li><a href="#experience" onclick="closeMobile()">Experience</a></li>
+      <li><a href="#contact" onclick="closeMobile()">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="hero">
+    <div class="hero__bg">
+      <div class="hero__blob hero__blob--1"></div>
+      <div class="hero__blob hero__blob--2"></div>
+      <div class="hero__blob hero__blob--3"></div>
+      <div class="hero__grid"></div>
+    </div>
+
+    <div class="hero__content">
+      <div class="hero__eyebrow">
+        <span class="dot"></span>
+        Available for new projects
+        <span class="dot"></span>
+      </div>
+
+      <h1 class="hero__name">
+        <span class="hero__name-line" data-text="Prachi">Prachi</span>
+        <em class="hero__name-italic">Verma</em>
+      </h1>
+
+      <div class="hero__roles">
+        <span class="role-tag">Social Media Manager</span>
+        <span class="role-sep">·</span>
+        <span class="role-tag">Content Strategist</span>
+        <span class="role-sep">·</span>
+        <span class="role-tag">Digital Media</span>
+      </div>
+
+      <p class="hero__tagline">
+        Crafting narratives that convert.<br/>
+        Campaigns that resonate. Content that lasts.
+      </p>
+
+      <div class="hero__actions">
+        <a href="#work" class="btn btn--primary">View My Work</a>
+        <a href="#contact" class="btn btn--ghost">Let's Talk</a>
+      </div>
+
+      <div class="hero__stats">
+        <div class="stat">
+          <span class="stat__num">2+</span>
+          <span class="stat__label">Years Experience</span>
+        </div>
+        <div class="stat__divider"></div>
+        <div class="stat">
+          <span class="stat__num">3</span>
+          <span class="stat__label">Brands Managed</span>
+        </div>
+        <div class="stat__divider"></div>
+        <div class="stat">
+          <span class="stat__num">∞</span>
+          <span class="stat__label">Stories to Tell</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Avatar graphic -->
+    <div class="hero__avatar-wrap">
+      <div class="hero__avatar">
+        <svg viewBox="0 0 340 420" xmlns="http://www.w3.org/2000/svg" class="avatar-svg">
+          <!-- Background card -->
+          <rect x="20" y="20" width="300" height="380" rx="24" fill="url(#avatarBg)" />
+          <!-- Decorative rings -->
+          <circle cx="170" cy="160" r="100" fill="none" stroke="rgba(212,175,55,0.3)" stroke-width="1.5"/>
+          <circle cx="170" cy="160" r="80" fill="none" stroke="rgba(212,175,55,0.2)" stroke-width="1"/>
+          <!-- Body silhouette -->
+          <ellipse cx="170" cy="310" rx="90" ry="70" fill="url(#bodyGrad)" />
+          <!-- Head -->
+          <circle cx="170" cy="155" r="65" fill="url(#skinGrad)" />
+          <!-- Hair -->
+          <ellipse cx="170" cy="105" rx="68" ry="52" fill="#2C1810" />
+          <ellipse cx="170" cy="130" rx="65" ry="45" fill="#3D2314" />
+          <!-- Hair flow -->
+          <path d="M105 130 Q90 170 100 220 Q115 180 120 155" fill="#2C1810" opacity="0.9"/>
+          <path d="M235 130 Q250 170 240 220 Q225 180 220 155" fill="#2C1810" opacity="0.9"/>
+          <!-- Face features -->
+          <ellipse cx="148" cy="158" rx="8" ry="9" fill="#1a1a2e" />
+          <ellipse cx="192" cy="158" rx="8" ry="9" fill="#1a1a2e" />
+          <ellipse cx="150" cy="156" rx="3" ry="3.5" fill="#fff" opacity="0.6"/>
+          <ellipse cx="194" cy="156" rx="3" ry="3.5" fill="#fff" opacity="0.6"/>
+          <!-- Eyebrows -->
+          <path d="M137 144 Q148 140 159 143" stroke="#2C1810" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          <path d="M181 143 Q192 140 203 144" stroke="#2C1810" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          <!-- Nose -->
+          <path d="M165 162 Q162 175 168 179 Q172 181 174 179 Q180 175 177 162" stroke="#c89070" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+          <!-- Smile -->
+          <path d="M152 192 Q170 205 188 192" stroke="#c07060" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+          <!-- Cheeks -->
+          <ellipse cx="138" cy="180" rx="12" ry="7" fill="#e8a090" opacity="0.35"/>
+          <ellipse cx="202" cy="180" rx="12" ry="7" fill="#e8a090" opacity="0.35"/>
+          <!-- Professional outfit -->
+          <path d="M100 310 Q100 260 130 250 L170 265 L210 250 Q240 260 240 310 L240 400 L100 400 Z" fill="url(#outfitGrad)"/>
+          <!-- Collar -->
+          <path d="M145 250 L170 285 L195 250 L185 245 L170 270 L155 245 Z" fill="#f0ece8"/>
+          <!-- Neck -->
+          <rect x="158" y="213" width="24" height="38" rx="8" fill="url(#skinGrad)"/>
+          <!-- Name tag on card -->
+          <rect x="55" y="355" width="230" height="38" rx="8" fill="rgba(212,175,55,0.15)" stroke="rgba(212,175,55,0.4)" stroke-width="1"/>
+          <text x="170" y="373" text-anchor="middle" fill="#D4AF37" font-family="Cormorant Garamond, serif" font-size="13" font-weight="600" letter-spacing="2">DIGITAL STRATEGIST</text>
+          <text x="170" y="388" text-anchor="middle" fill="rgba(212,175,55,0.7)" font-family="DM Sans, sans-serif" font-size="9" letter-spacing="3">BHOPAL · INDIA</text>
+          <!-- Decorative corner accents -->
+          <path d="M30 50 L30 30 L50 30" stroke="#D4AF37" stroke-width="1.5" fill="none"/>
+          <path d="M310 50 L310 30 L290 30" stroke="#D4AF37" stroke-width="1.5" fill="none"/>
+          <path d="M30 370 L30 390 L50 390" stroke="#D4AF37" stroke-width="1.5" fill="none"/>
+          <path d="M310 370 L310 390 L290 390" stroke="#D4AF37" stroke-width="1.5" fill="none"/>
+          <defs>
+            <linearGradient id="avatarBg" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#0f0c1a"/>
+              <stop offset="100%" stop-color="#1a1030"/>
+            </linearGradient>
+            <linearGradient id="skinGrad" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#D4956A"/>
+              <stop offset="100%" stop-color="#B87040"/>
+            </linearGradient>
+            <linearGradient id="bodyGrad" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#1e1535"/>
+              <stop offset="100%" stop-color="#0f0c1a"/>
+            </linearGradient>
+            <linearGradient id="outfitGrad" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#2a1f4a"/>
+              <stop offset="100%" stop-color="#150f2a"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <div class="avatar__glow"></div>
+      </div>
+
+      <!-- Floating badges -->
+      <div class="badge badge--top">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" fill="#D4AF37" stroke="#D4AF37" stroke-width="1"/></svg>
+        PhD Researcher
+      </div>
+      <div class="badge badge--bottom">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="#D4AF37" stroke-width="2"/><path d="M12 6v6l4 2" stroke="#D4AF37" stroke-width="2" stroke-linecap="round"/></svg>
+        Open to Remote
+      </div>
+    </div>
+
+    <div class="hero__scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ========== MARQUEE TICKER ========== -->
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker__inner">
+      <span>Social Media Strategy</span><span class="ticker__dot">✦</span>
+      <span>Content Creation</span><span class="ticker__dot">✦</span>
+      <span>Campaign Management</span><span class="ticker__dot">✦</span>
+      <span>Brand Voice</span><span class="ticker__dot">✦</span>
+      <span>Digital Marketing</span><span class="ticker__dot">✦</span>
+      <span>Copywriting</span><span class="ticker__dot">✦</span>
+      <span>HR Communications</span><span class="ticker__dot">✦</span>
+      <span>Content Calendars</span><span class="ticker__dot">✦</span>
+      <span>Engagement Analytics</span><span class="ticker__dot">✦</span>
+      <span>Community Management</span><span class="ticker__dot">✦</span>
+      <!-- Duplicate for seamless loop -->
+      <span>Social Media Strategy</span><span class="ticker__dot">✦</span>
+      <span>Content Creation</span><span class="ticker__dot">✦</span>
+      <span>Campaign Management</span><span class="ticker__dot">✦</span>
+      <span>Brand Voice</span><span class="ticker__dot">✦</span>
+      <span>Digital Marketing</span><span class="ticker__dot">✦</span>
+      <span>Copywriting</span><span class="ticker__dot">✦</span>
+      <span>HR Communications</span><span class="ticker__dot">✦</span>
+      <span>Content Calendars</span><span class="ticker__dot">✦</span>
+      <span>Engagement Analytics</span><span class="ticker__dot">✦</span>
+      <span>Community Management</span><span class="ticker__dot">✦</span>
+    </div>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="about__grid">
+        <div class="about__left reveal">
+          <div class="section-label">Who I Am</div>
+          <h2 class="section-title">Words. Strategy.<br/><em>Impact.</em></h2>
+          <p class="about__text">
+            I'm Prachi Verma — a digital media professional and communications strategist with 2+ years of experience turning brands into compelling stories. Based in Bhopal, I work remotely with teams across industries, bridging the worlds of creative content and people-first HR communication.
+          </p>
+          <p class="about__text">
+            Currently pursuing a <strong>PhD in English from Amity University</strong>, I bring an academic depth to every piece of content I craft — whether it's a viral Instagram carousel, a brand awareness campaign, or an internal comms document that actually gets read.
+          </p>
+          <div class="about__tags">
+            <span class="tag">Instagram</span>
+            <span class="tag">LinkedIn</span>
+            <span class="tag">Facebook</span>
+            <span class="tag">Meta Business Suite</span>
+            <span class="tag">Canva</span>
+            <span class="tag">Content Strategy</span>
+            <span class="tag">Copywriting</span>
+            <span class="tag">Analytics</span>
+          </div>
+          <a href="Prachi_Verma_Resume.pdf" class="btn btn--primary" download>Download Resume</a>
+        </div>
+
+        <div class="about__right reveal reveal--right">
+          <div class="about__card-stack">
+            <div class="about__card about__card--1">
+              <div class="about__card-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><rect x="2" y="3" width="20" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M8 21h8M12 17v4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              </div>
+              <h3>Content & Campaigns</h3>
+              <p>End-to-end social campaigns across Instagram, LinkedIn & Facebook with measurable results.</p>
+            </div>
+            <div class="about__card about__card--2">
+              <div class="about__card-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="1.5"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              </div>
+              <h3>HR Communications</h3>
+              <p>Full-cycle HR operations with zero payroll errors and a reputation for crystal-clear communication.</p>
+            </div>
+            <div class="about__card about__card--3">
+              <div class="about__card-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <h3>Research & Writing</h3>
+              <p>PhD-level analytical thinking applied to brand storytelling, copywriting, and strategic communications.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SERVICES ========== -->
+  <section class="services section" id="services">
+    <div class="services__bg">
+      <div class="services__pattern"></div>
+    </div>
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">What I Offer</div>
+        <h2 class="section-title">Services</h2>
+      </div>
+
+      <div class="services__grid">
+        <div class="service-card reveal">
+          <div class="service-card__num">01</div>
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="24" cy="24" r="10" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M4 24h40M24 4c-5.5 5-9 11.5-9 20s3.5 15 9 20M24 4c5.5 5 9 11.5 9 20s-3.5 15-9 20" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Social Media Management</h3>
+          <p class="service-card__desc">Full-service management of your brand's social presence — strategy, content calendars, scheduling, community engagement, and performance reporting across all major platforms.</p>
+          <ul class="service-card__list">
+            <li>Instagram · LinkedIn · Facebook</li>
+            <li>Monthly Content Calendars</li>
+            <li>Performance Analytics Reports</li>
+            <li>Community Engagement</li>
+          </ul>
+        </div>
+
+        <div class="service-card reveal" style="--delay: 0.1s">
+          <div class="service-card__num">02</div>
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6 8h36v28H6z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+              <path d="M14 20h20M14 27h14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M14 14h6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M30 40l4 4M24 40v4M18 40l-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Content Writing & Copywriting</h3>
+          <p class="service-card__desc">Research-backed, brand-aligned copy that speaks to your audience. From punchy captions to long-form articles, every word serves a strategic purpose.</p>
+          <ul class="service-card__list">
+            <li>Social Media Captions & Scripts</li>
+            <li>Blog Posts & Articles</li>
+            <li>Brand Voice Development</li>
+            <li>Email Newsletters</li>
+          </ul>
+        </div>
+
+        <div class="service-card reveal" style="--delay: 0.2s">
+          <div class="service-card__num">03</div>
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 40V20l16-12 16 12v20H8z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+              <rect x="18" y="28" width="12" height="12" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M24 8v4M8 20l-4-3M40 20l4-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Digital Marketing Strategy</h3>
+          <p class="service-card__desc">Holistic campaigns that connect brand goals to real audience behavior. From concept to execution, I plan strategies that grow your digital footprint with intention.</p>
+          <ul class="service-card__list">
+            <li>Campaign Planning & Execution</li>
+            <li>Audience Targeting</li>
+            <li>Brand Consistency Audits</li>
+            <li>Growth Strategy</li>
+          </ul>
+        </div>
+
+        <div class="service-card reveal" style="--delay: 0.3s">
+          <div class="service-card__num">04</div>
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="16" cy="16" r="8" stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="32" cy="32" r="8" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M22 22l4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M10 34a8 8 0 0 1 8-8M30 14a8 8 0 0 1 8 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">HR Content & Internal Comms</h3>
+          <p class="service-card__desc">Bridging HR and communications — I craft employer branding content, onboarding materials, training documentation, and internal newsletters that people actually engage with.</p>
+          <ul class="service-card__list">
+            <li>Employer Brand Content</li>
+            <li>Onboarding Documentation</li>
+            <li>Internal Newsletters</li>
+            <li>LinkedIn Thought Leadership</li>
+          </ul>
+        </div>
+
+        <div class="service-card reveal" style="--delay: 0.4s">
+          <div class="service-card__num">05</div>
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="6" y="6" width="36" height="36" rx="6" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M14 24h4l4-8 6 16 4-10 4 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Analytics & Reporting</h3>
+          <p class="service-card__desc">Data-driven insights delivered in formats decision-makers actually use. I translate engagement metrics into clear, actionable reports that guide future strategy.</p>
+          <ul class="service-card__list">
+            <li>Monthly Performance Reports</li>
+            <li>Engagement Rate Analysis</li>
+            <li>Competitor Benchmarking</li>
+            <li>Insight Presentations</li>
+          </ul>
+        </div>
+
+        <div class="service-card reveal" style="--delay: 0.5s">
+          <div class="service-card__num">06</div>
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24 4l4 8h9l-7 6 3 9-9-6-9 6 3-9-7-6h9z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+              <path d="M10 36c0 0 4 6 14 6s14-6 14-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Brand Visual Content</h3>
+          <p class="service-card__desc">Canva-crafted visual assets that maintain brand consistency — carousels, story templates, infographics, and campaign creatives designed for maximum scroll-stopping impact.</p>
+          <ul class="service-card__list">
+            <li>Instagram Carousels & Reels</li>
+            <li>Story & Post Templates</li>
+            <li>Infographics</li>
+            <li>Brand Asset Creation</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FEATURED WORK ========== -->
+  <section class="work section" id="work">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">Portfolio</div>
+        <h2 class="section-title">Featured Work</h2>
+        <p class="section-sub">A selection of campaigns, content, and projects that demonstrate the depth and range of my work.</p>
+      </div>
+
+      <div class="work__grid">
+
+        <a href="#placeholder-case-study-1" class="work-card work-card--large reveal">
+          <div class="work-card__visual work-card__visual--1">
+            <svg viewBox="0 0 600 360" xmlns="http://www.w3.org/2000/svg" class="work-svg">
+              <rect width="600" height="360" fill="url(#wg1)"/>
+              <circle cx="300" cy="180" r="140" fill="none" stroke="rgba(212,175,55,0.2)" stroke-width="60"/>
+              <circle cx="300" cy="180" r="80" fill="none" stroke="rgba(212,175,55,0.3)" stroke-width="2"/>
+              <text x="300" y="160" text-anchor="middle" fill="rgba(212,175,55,0.8)" font-size="48" font-family="Cormorant Garamond, serif" font-weight="300">IG</text>
+              <text x="300" y="200" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="12" font-family="DM Sans, sans-serif" letter-spacing="3">CAMPAIGN</text>
+              <!-- Post mockup grid -->
+              <rect x="80" y="60" width="60" height="60" rx="6" fill="rgba(255,255,255,0.06)"/>
+              <rect x="80" y="130" width="60" height="60" rx="6" fill="rgba(255,255,255,0.04)"/>
+              <rect x="460" y="200" width="60" height="60" rx="6" fill="rgba(255,255,255,0.06)"/>
+              <rect x="460" y="270" width="60" height="60" rx="6" fill="rgba(255,255,255,0.04)"/>
+              <defs>
+                <linearGradient id="wg1" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#0d0820"/>
+                  <stop offset="100%" stop-color="#1a1035"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <div class="work-card__info">
+            <div class="work-card__tags">
+              <span>Social Media</span>
+              <span>Digikaar Solutions</span>
+            </div>
+            <h3 class="work-card__title">Multi-Platform Campaign Management</h3>
+            <p class="work-card__desc">End-to-end social media campaigns across Instagram, LinkedIn & Facebook — including content calendars, brand-aligned copy, and monthly performance reporting.</p>
+            <div class="work-card__link">View Case Study <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
+          </div>
+        </a>
+
+        <a href="#placeholder-case-study-2" class="work-card reveal" style="--delay:0.1s">
+          <div class="work-card__visual work-card__visual--2">
+            <svg viewBox="0 0 400 280" xmlns="http://www.w3.org/2000/svg" class="work-svg">
+              <rect width="400" height="280" fill="url(#wg2)"/>
+              <rect x="40" y="40" width="320" height="200" rx="12" fill="rgba(255,255,255,0.04)" stroke="rgba(212,175,55,0.2)" stroke-width="1"/>
+              <rect x="60" y="70" width="80" height="8" rx="4" fill="rgba(212,175,55,0.5)"/>
+              <rect x="60" y="88" width="200" height="4" rx="2" fill="rgba(255,255,255,0.2)"/>
+              <rect x="60" y="100" width="160" height="4" rx="2" fill="rgba(255,255,255,0.15)"/>
+              <rect x="60" y="120" width="260" height="80" rx="8" fill="rgba(255,255,255,0.05)"/>
+              <text x="190" y="167" text-anchor="middle" fill="rgba(212,175,55,0.6)" font-size="28" font-family="Cormorant Garamond, serif">Content</text>
+              <defs>
+                <linearGradient id="wg2" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#0a1520"/>
+                  <stop offset="100%" stop-color="#101a2a"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <div class="work-card__info">
+            <div class="work-card__tags">
+              <span>Copywriting</span>
+              <span>Content Strategy</span>
+            </div>
+            <h3 class="work-card__title">Brand Voice & Content Calendar</h3>
+            <p class="work-card__desc">Built and maintained consistent monthly content calendars, coordinating across creative teams to ensure on-time delivery and brand alignment.</p>
+            <div class="work-card__link">View Case Study <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
+          </div>
+        </a>
+
+        <a href="#placeholder-case-study-3" class="work-card reveal" style="--delay:0.2s">
+          <div class="work-card__visual work-card__visual--3">
+            <svg viewBox="0 0 400 280" xmlns="http://www.w3.org/2000/svg" class="work-svg">
+              <rect width="400" height="280" fill="url(#wg3)"/>
+              <!-- Analytics bars -->
+              <rect x="60" y="180" width="30" height="60" rx="4" fill="rgba(212,175,55,0.7)"/>
+              <rect x="105" y="140" width="30" height="100" rx="4" fill="rgba(212,175,55,0.5)"/>
+              <rect x="150" y="100" width="30" height="140" rx="4" fill="rgba(212,175,55,0.8)"/>
+              <rect x="195" y="120" width="30" height="120" rx="4" fill="rgba(212,175,55,0.4)"/>
+              <rect x="240" y="80" width="30" height="160" rx="4" fill="rgba(212,175,55,0.9)"/>
+              <rect x="285" y="60" width="30" height="180" rx="4" fill="rgba(212,175,55,1)"/>
+              <rect x="330" y="90" width="30" height="150" rx="4" fill="rgba(212,175,55,0.6)"/>
+              <!-- Trend line -->
+              <path d="M75 200 Q120 160 165 120 Q210 130 255 95 Q300 75 345 95" stroke="rgba(255,255,255,0.4)" stroke-width="2" fill="none" stroke-dasharray="4,4"/>
+              <defs>
+                <linearGradient id="wg3" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="#0f1520"/>
+                  <stop offset="100%" stop-color="#0a0f18"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <div class="work-card__info">
+            <div class="work-card__tags">
+              <span>Analytics</span>
+              <span>Performance</span>
+            </div>
+            <h3 class="work-card__title">Engagement Analytics & Reporting</h3>
+            <p class="work-card__desc">Monitored key performance metrics, translated data into actionable insights, and delivered stakeholder reports each cycle with clear growth recommendations.</p>
+            <div class="work-card__link">View Case Study <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
+          </div>
+        </a>
+
+        <a href="#placeholder-case-study-4" class="work-card reveal" style="--delay:0.3s">
+          <div class="work-card__visual work-card__visual--4">
+            <svg viewBox="0 0 400 280" xmlns="http://www.w3.org/2000/svg" class="work-svg">
+              <rect width="400" height="280" fill="url(#wg4)"/>
+              <circle cx="200" cy="140" r="80" fill="rgba(212,175,55,0.08)" stroke="rgba(212,175,55,0.3)" stroke-width="1"/>
+              <circle cx="200" cy="140" r="50" fill="rgba(212,175,55,0.06)" stroke="rgba(212,175,55,0.2)" stroke-width="1"/>
+              <!-- People icons -->
+              <circle cx="200" cy="80" r="16" fill="rgba(212,175,55,0.4)"/>
+              <circle cx="248" cy="108" r="13" fill="rgba(212,175,55,0.3)"/>
+              <circle cx="248" cy="172" r="13" fill="rgba(212,175,55,0.3)"/>
+              <circle cx="200" cy="200" r="16" fill="rgba(212,175,55,0.4)"/>
+              <circle cx="152" cy="172" r="13" fill="rgba(212,175,55,0.3)"/>
+              <circle cx="152" cy="108" r="13" fill="rgba(212,175,55,0.3)"/>
+              <!-- Center -->
+              <circle cx="200" cy="140" r="20" fill="rgba(212,175,55,0.6)"/>
+              <text x="200" y="146" text-anchor="middle" fill="#0d0820" font-size="14" font-family="DM Sans" font-weight="500">HR</text>
+              <defs>
+                <linearGradient id="wg4" x1="0" y1="1" x2="1" y2="0">
+                  <stop offset="0%" stop-color="#0d1520"/>
+                  <stop offset="100%" stop-color="#15202e"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <div class="work-card__info">
+            <div class="work-card__tags">
+              <span>HR</span>
+              <span>Recruitment</span>
+            </div>
+            <h3 class="work-card__title">Full-Cycle Recruitment & HR Ops</h3>
+            <p class="work-card__desc">Managed end-to-end hiring, onboarding, payroll, and employee relations — achieving zero payroll discrepancies and streamlined operations across multiple organisations.</p>
+            <div class="work-card__link">View Case Study <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
+          </div>
+        </a>
+
+      </div>
+
+      <div class="work__cta reveal">
+        <p>Want to see more?</p>
+        <a href="#placeholder-portfolio-link" class="btn btn--ghost">Full Portfolio</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EXPERIENCE ========== -->
+  <section class="experience section" id="experience">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">Journey</div>
+        <h2 class="section-title">Experience &amp; Education</h2>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline__item reveal">
+          <div class="timeline__marker">
+            <div class="timeline__dot timeline__dot--active"></div>
+            <div class="timeline__line"></div>
+          </div>
+          <div class="timeline__content">
+            <div class="timeline__period">Jan 2026 – Present</div>
+            <h3 class="timeline__role">Social Media Manager</h3>
+            <div class="timeline__org">Digikaar Solutions &nbsp;·&nbsp; Remote</div>
+            <ul class="timeline__bullets">
+              <li>Planning and executing end-to-end social media campaigns across Instagram, LinkedIn, and Facebook</li>
+              <li>Building monthly content calendars and coordinating with design and copy teams</li>
+              <li>Monitoring engagement metrics and delivering actionable performance insights</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline__item reveal" style="--delay:0.1s">
+          <div class="timeline__marker">
+            <div class="timeline__dot"></div>
+            <div class="timeline__line"></div>
+          </div>
+          <div class="timeline__content">
+            <div class="timeline__period">2025 – 2026</div>
+            <h3 class="timeline__role">HR Coordinator</h3>
+            <div class="timeline__org">Comfort Journey &nbsp;·&nbsp; Remote</div>
+            <ul class="timeline__bullets">
+              <li>Managed full-cycle recruitment for tour guides and sales staff including seasonal workforce planning</li>
+              <li>Administered visa documentation, onboarding, payroll, and benefits management</li>
+              <li>Served as primary HR point of contact for staff queries and grievance resolution</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline__item reveal" style="--delay:0.2s">
+          <div class="timeline__marker">
+            <div class="timeline__dot"></div>
+            <div class="timeline__line"></div>
+          </div>
+          <div class="timeline__content">
+            <div class="timeline__period">2024 – 2025</div>
+            <h3 class="timeline__role">HR Coordinator</h3>
+            <div class="timeline__org">The Score Nation &nbsp;·&nbsp; Remote</div>
+            <ul class="timeline__bullets">
+              <li>Oversaw recruitment, onboarding, attendance, and payroll for tutors and administrative staff</li>
+              <li>Designed and facilitated staff orientation and training programs</li>
+              <li>Achieved zero payroll discrepancies across all processed cycles</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline__item reveal" style="--delay:0.3s">
+          <div class="timeline__marker">
+            <div class="timeline__dot timeline__dot--edu"></div>
+          </div>
+          <div class="timeline__content timeline__content--edu">
+            <div class="timeline__period">2024 – Present</div>
+            <h3 class="timeline__role">PhD in English</h3>
+            <div class="timeline__org">Amity University &nbsp;·&nbsp; Ongoing</div>
+            <p class="timeline__note">Bringing academic rigour, research methodology, and advanced written communication skills to every professional engagement.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SKILLS ========== -->
+  <section class="skills section">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">Toolkit</div>
+        <h2 class="section-title">Skills &amp; Tools</h2>
+      </div>
+
+      <div class="skills__grid">
+        <div class="skills__group reveal">
+          <h3 class="skills__group-title">Social Media & Content</h3>
+          <div class="skill-bars">
+            <div class="skill-bar">
+              <div class="skill-bar__label">Content Strategy</div>
+              <div class="skill-bar__track"><div class="skill-bar__fill" style="--pct: 95%"></div></div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-bar__label">Social Media Management</div>
+              <div class="skill-bar__track"><div class="skill-bar__fill" style="--pct: 92%"></div></div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-bar__label">Copywriting</div>
+              <div class="skill-bar__track"><div class="skill-bar__fill" style="--pct: 90%"></div></div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-bar__label">Campaign Management</div>
+              <div class="skill-bar__track"><div class="skill-bar__fill" style="--pct: 88%"></div></div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-bar__label">Engagement Analytics</div>
+              <div class="skill-bar__track"><div class="skill-bar__fill" style="--pct: 82%"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills__group reveal" style="--delay:0.15s">
+          <h3 class="skills__group-title">HR & Communications</h3>
+          <div class="skill-bars">
+            <div class="skill-bar">
+              <div class="skill-bar__label">Full-Cycle Recruitment</div>
+              <div class="skill-bar__track"><div class="skill-bar__fill" style="--pct: 93%"></div></div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-bar__label">Payroll Processing</div>
+              <div class="skill-bar__track"><div class="skill-bar__fill" style="--pct: 90%"></div></div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-bar__label">Employee Relations</div>
+              <div class="skill-bar__track"><div class="skill-bar__fill" style="--pct: 88%"></div></div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-bar__label">HR Documentation</div>
+              <div class="skill-bar__track"><div class="skill-bar__fill" style="--pct: 92%"></div></div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-bar__label">Training & Onboarding</div>
+              <div class="skill-bar__track"><div class="skill-bar__fill" style="--pct: 87%"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills__group reveal" style="--delay:0.3s">
+          <h3 class="skills__group-title">Tools & Platforms</h3>
+          <div class="tools-grid">
+            <div class="tool-chip">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/></svg>
+              Instagram
+            </div>
+            <div class="tool-chip">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="3" stroke="currentColor" stroke-width="1.5"/><path d="M16 8h-3a1 1 0 0 0-1 1v3M12 12v8M8 12h8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              LinkedIn
+            </div>
+            <div class="tool-chip">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="3" stroke="currentColor" stroke-width="1.5"/><path d="M18 8h-5a3 3 0 0 0 0 6h2a3 3 0 0 1 0 6H8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              Meta Suite
+            </div>
+            <div class="tool-chip">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M8 12h8M12 8l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              Canva
+            </div>
+            <div class="tool-chip">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M3 9h18M9 21V9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              Google Workspace
+            </div>
+            <div class="tool-chip">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4zM14 14h6v6h-6z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+              MS Office
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TESTIMONIALS ========== -->
+  <section class="testimonials section">
+    <div class="testimonials__bg"></div>
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">Kind Words</div>
+        <h2 class="section-title">Testimonials</h2>
+      </div>
+      <div class="testimonials__grid">
+        <div class="testimonial-card reveal">
+          <div class="testimonial-card__quote">"</div>
+          <p class="testimonial-card__text">Prachi has a remarkable ability to translate brand goals into content that genuinely connects. Her calendars are always sharp, on-time, and exactly aligned with our voice.</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">DK</div>
+            <div>
+              <div class="testimonial-card__name">— Digital Marketing Lead</div>
+              <div class="testimonial-card__org">Digikaar Solutions</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal" style="--delay:0.15s">
+          <div class="testimonial-card__quote">"</div>
+          <p class="testimonial-card__text">Her HR work was impeccable. Zero payroll errors, seamless onboarding processes, and a warmth in communication that made every new hire feel welcomed from day one.</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">CJ</div>
+            <div>
+              <div class="testimonial-card__name">— Operations Manager</div>
+              <div class="testimonial-card__org">Comfort Journey</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal" style="--delay:0.3s">
+          <div class="testimonial-card__quote">"</div>
+          <p class="testimonial-card__text">Prachi's training programs genuinely improved our team's productivity. She has a rare gift for simplifying the complex and communicating it with clarity and empathy.</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">SN</div>
+            <div>
+              <div class="testimonial-card__name">— Director of Education</div>
+              <div class="testimonial-card__org">The Score Nation</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="contact__grid">
+        <div class="contact__left reveal">
+          <div class="section-label">Get In Touch</div>
+          <h2 class="section-title">Let's Work<br/><em>Together</em></h2>
+          <p class="contact__text">
+            Whether you need a sharp social media strategy, compelling content, or an HR communications overhaul — I'm ready. Open to remote roles, freelance projects, and long-term collaborations.
+          </p>
+          <div class="contact__details">
+            <a href="mailto:vermaprachi478@gmail.com" class="contact__item">
+              <div class="contact__item-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M2 7l10 7 10-7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              </div>
+              <div>
+                <div class="contact__item-label">Email</div>
+                <div class="contact__item-value">vermaprachi478@gmail.com</div>
+              </div>
+            </a>
+            <a href="tel:+919131690608" class="contact__item">
+              <div class="contact__item-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.7 12.5a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.61 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.69a16 16 0 0 0 6.29 6.29l1.06-1.06a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" stroke="currentColor" stroke-width="1.5"/></svg>
+              </div>
+              <div>
+                <div class="contact__item-label">Phone</div>
+                <div class="contact__item-value">+91 91316 90608</div>
+              </div>
+            </a>
+            <div class="contact__item">
+              <div class="contact__item-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="1.5"/></svg>
+              </div>
+              <div>
+                <div class="contact__item-label">Location</div>
+                <div class="contact__item-value">Bhopal, India · Remote</div>
+              </div>
+            </div>
+          </div>
+          <div class="contact__social">
+            <a href="#placeholder-linkedin" class="social-btn" aria-label="LinkedIn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="3" stroke="currentColor" stroke-width="1.5"/><path d="M16 8h-3a1 1 0 0 0-1 1v3M12 12v8M8 12h8M8 8v.01" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </a>
+            <a href="#placeholder-instagram" class="social-btn" aria-label="Instagram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/></svg>
+            </a>
+            <a href="#placeholder-twitter" class="social-btn" aria-label="Twitter / X">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 4l16 16M4 20L20 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact__right reveal reveal--right">
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="e.g. Rahul Sharma" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="rahul@company.com" required />
+            </div>
+            <div class="form-group">
+              <label for="service">Service Interested In</label>
+              <select id="service" name="service">
+                <option value="">Select a service...</option>
+                <option>Social Media Management</option>
+                <option>Content Writing & Copywriting</option>
+                <option>Digital Marketing Strategy</option>
+                <option>HR Content & Internal Comms</option>
+                <option>Analytics & Reporting</option>
+                <option>Brand Visual Content</option>
+                <option>Other / Let's discuss</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Your Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about your project, goals, or what you're looking for..."></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full">
+              Send Message
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <div class="footer__logo">PV</div>
+          <p class="footer__tagline">Digital Media · Content · Strategy</p>
+        </div>
+        <div class="footer__links">
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#work">Work</a>
+          <a href="#experience">Experience</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer__social">
+          <a href="#placeholder-linkedin" aria-label="LinkedIn">in</a>
+          <a href="#placeholder-instagram" aria-label="Instagram">ig</a>
+          <a href="#placeholder-twitter" aria-label="Twitter">tw</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© 2026 Prachi Verma. All rights reserved.</p>
+        <p>Designed with intent. Built for impact.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
